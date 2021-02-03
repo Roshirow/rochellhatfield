@@ -1,4 +1,4 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 768px) {
   @font-face {
     font-family: Montserrat-Bold;
     src: url("../fonts/montserrat/Montserrat-Bold.ttf");
@@ -44,7 +44,7 @@
     transition: 0.3s linear;
   }
   html body nav a img {
-    width: 50%;
+    width: 100%;
   }
   html body nav a:hover {
     -webkit-transform: scale(0.98);
@@ -85,24 +85,51 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   html body #home .textmobile {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50vw;
+  }
+  html body #home .textmobile h1 {
+    width: 75vw;
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    color: #FF7BBA;
+  }
+  html body #home .textmobile h2 {
+    width: 75vw;
+    font-family: roboto, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    font-size: 2em;
+    line-height: 0.5em;
   }
   html body #home .text {
-    width: 40vw;
+    width: 75vw;
     margin-left: 8vw;
-    margin-top: 10%;
+    margin-top: 8%;
     height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -113,18 +140,20 @@
             flex-direction: column;
   }
   html body #home .text h1 {
+    display: none;
     font-family: roboto, sans-serif;
     font-weight: 600;
     letter-spacing: 0.05em;
-    font-size: 3em;
+    font-size: 1em;
     line-height: 0.1em;
     color: #FF7BBA;
   }
   html body #home .text h2 {
+    display: none;
     font-family: roboto, sans-serif;
     font-weight: lighter;
     letter-spacing: 0.05em;
-    font-size: 2.4em;
+    font-size: 0.9em;
     line-height: 0.1em;
   }
   html body #home .text p {
@@ -135,7 +164,7 @@
     line-height: 1.3em;
   }
   html body #home .text button {
-    width: 15vw;
+    width: 30vw;
     padding: 3%;
     background-color: white;
     border: 1px solid lightblue;
@@ -150,7 +179,7 @@
     text-transform: uppercase;
     font-family: roboto, sans-serif;
     font-weight: lighter;
-    font-size: 0.8em;
+    font-size: 0.7em;
     letter-spacing: 0.08em;
   }
   html body #home .text button:hover {
@@ -166,20 +195,18 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   html body #home .right-stuff #avatar {
-    width: 35vw;
+    width: 75vw;
   }
   html body #home .right-stuff #socialmedia {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -204,6 +231,7 @@
             transform: scale(0.95);
   }
   html body #home .flower {
+    display: none;
     position: absolute;
     z-index: -100;
     left: -3vw;
@@ -261,8 +289,8 @@
   html body #about .row1 .text-box1 h1 {
     font-family: roboto, sans-serif;
     font-weight: 600;
-    letter-spacing: 0.05em;
-    font-size: 3em;
+    letter-spacing: 0.03em;
+    font-size: 1.8em;
     line-height: 0.1em;
     color: #FF7BBA;
   }
@@ -317,7 +345,7 @@
     position: absolute;
     z-index: -100;
     left: -3vw;
-    top: 125vh;
+    top: 130vh;
     width: 20vw;
   }
   html body #paperAirplane {
@@ -594,11 +622,14 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 1%;
   }
   html body #design .list p {
     color: lightblue;
-    font-size: 15px;
+    font-size: 10px;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     font-family: roboto, sans-serif;
@@ -954,4 +985,4 @@
     opacity: 0;
   }
 }
-/*# sourceMappingURL=desktop.css.map */
+/*# sourceMappingURL=mobile.css.map */

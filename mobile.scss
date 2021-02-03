@@ -1,4 +1,4 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 768px) {
     @font-face {
         font-family: Montserrat-Bold;
         src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
@@ -34,7 +34,7 @@
                     transition: 0.3s linear;
 
                     img {
-                        width:50%;
+                        width:100%;
                     }
                 }
                 a:hover {
@@ -67,36 +67,60 @@
             #home {
                 width:95vw;
                 display:flex;
-                flex-direction:row;
-                align-items: flex-start;
-                justify-content: space-evenly;
+                flex-direction:column-reverse;
+                align-items: center;
+                justify-content: center;
 
                 .textmobile {
-                    display:none;
+                    display:flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width:50vw;
+
+                    h1 {
+                        width:75vw;
+                        font-family:roboto, sans-serif;
+                        font-weight: 600;
+                        letter-spacing: 0.05em;
+                        font-size:2.5em;
+                        line-height:0.8em;
+                        color: #FF7BBA;
+                    }
+
+                    h2 {
+                        width:75vw;
+                        font-family:roboto, sans-serif;
+                        font-weight: lighter;
+                        letter-spacing: 0.05em;
+                        font-size:2em;
+                        line-height:0.5em;
+                    }
                 }
     
                 .text {
-                    width:40vw;
+                    width:75vw;
                     margin-left:8vw;
-                    margin-top:10%;
+                    margin-top:8%;
                     height:50vh;
                     display:flex;
                     flex-direction:column;
 
                     h1 {
+                        display:none;
                         font-family:roboto, sans-serif;
                         font-weight: 600;
                         letter-spacing: 0.05em;
-                        font-size:3em;
+                        font-size:1em;
                         line-height:0.1em;
                         color: #FF7BBA;
                     }
 
                     h2 {
+                        display:none;
                         font-family:roboto, sans-serif;
                         font-weight: lighter;
                         letter-spacing: 0.05em;
-                        font-size:2.4em;
+                        font-size:0.9em;
                         line-height:0.1em;
                     }
 
@@ -109,7 +133,7 @@
                     }
 
                     button {
-                        width:15vw;
+                        width:30vw;
                         padding:3%;
                         background-color:white;
                         border: 1px solid lightblue;
@@ -123,7 +147,7 @@
                             text-transform: uppercase;
                             font-family:roboto, sans-serif;
                             font-weight: lighter;
-                            font-size:0.8em;
+                            font-size:0.7em;
                             letter-spacing: 0.08em;
                         }
                     }
@@ -136,15 +160,15 @@
                     width:50vw;
                     display:flex;
                     flex-direction:column;
-                    align-items: flex-end;
+                    align-items: center;
                     justify-content: center;
 
                     #avatar {
-                        width:35vw;
+                        width:75vw;
                     }
 
                     #socialmedia {
-                        display:flex;
+                        display:none;
                         flex-direction:column;
                         align-items:flex-end;
                         justify-content: space-evenly;
@@ -162,6 +186,7 @@
                 }
 
                 .flower {
+                    display:none;
                     position:absolute;
                     z-index:-100;
                     left:-3vw;
@@ -196,8 +221,8 @@
                         h1 {
                             font-family:roboto, sans-serif;
                             font-weight: 600;
-                            letter-spacing: 0.05em;
-                            font-size:3em;
+                            letter-spacing: 0.03em;
+                            font-size:1.8em;
                             line-height:0.1em;
                             color: #FF7BBA;
                         }
@@ -249,7 +274,7 @@
                 position:absolute;
                 z-index:-100;
                 left:-3vw;
-                top:125vh;
+                top:130vh;
                 width:20vw;
             }
             #paperAirplane {
@@ -450,11 +475,12 @@
                     flex-direction:row;
                     width:100vw;
                     justify-content: space-evenly;
+                    align-items: center;
                     margin-top:1%;
 
                     p {
                         color:lightblue;
-                        font-size:15px;
+                        font-size:10px;
                         letter-spacing:1.2px;
                         text-transform: uppercase;
                         font-family:roboto, sans-serif;
