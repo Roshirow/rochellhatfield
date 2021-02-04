@@ -591,9 +591,9 @@
         justify-content: space-around;
   }
   html body #design .buttons button {
-    width: 15vw;
-    height: 50px;
-    padding: 0 25px;
+    width: 20vw;
+    height: 40px;
+    padding: 3%;
     background-color: white;
     border: 1px solid lightblue;
     border-radius: 20px;
@@ -601,7 +601,7 @@
     text-transform: uppercase;
     font-family: roboto, sans-serif;
     font-weight: lighter;
-    font-size: 0.8em;
+    font-size: 0.7em;
     letter-spacing: 0.08em;
     -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
