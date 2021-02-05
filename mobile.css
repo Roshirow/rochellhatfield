@@ -351,24 +351,11 @@
   html body #paperAirplane {
     z-index: -100;
     position: absolute;
-    top: 73vh;
-    width: 15%;
+    top: 40vh;
+    left: 65vw;
+    width: 25%;
   }
   html body #contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100vw;
-  }
-  html body #contact .column1 {
-    width: 60vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -379,6 +366,26 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+  }
+  html body #contact .column1 {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 5%;
   }
   html body #contact .column1 .text-box1 {
@@ -392,9 +399,14 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 13%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
   }
   html body #contact .column1 .text-box1 h1 {
+    width: 80vw;
+    text-align: center;
     font-family: roboto, sans-serif;
     font-weight: 200;
     letter-spacing: 0.03em;
@@ -403,6 +415,7 @@
     color: #FF7BBA;
   }
   html body #contact .column1 .text-box1 h2 {
+    text-align: center;
     font-family: roboto, sans-serif;
     font-weight: lighter;
     font-size: 1.5em;
@@ -414,23 +427,21 @@
     width: 27%;
   }
   html body #contact .column2 {
-    width: 30vw;
-    height: 70vh;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   html body #contact .column2 #wa {
-    width: 70%;
+    width: 80%;
   }
   html body #contact .column2 .contactme {
     display: -webkit-box;
@@ -440,29 +451,28 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 23vw;
-    height: 15vh;
+    width: 45vw;
+    height: 30vh;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    background-color: #e0e0e0;
+    border-radius: 5%;
   }
   html body #contact .column2 .contactme #email {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   html body #contact .column2 .contactme #email button {
-    width: 14%;
+    width: 30%;
     -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
   }
@@ -476,26 +486,24 @@
   html body #contact .column2 .contactme #email #myInput {
     margin-left: 3vw;
     font-size: 0.9em;
-    width: 65%;
+    width: 90%;
     color: #6b6b6b;
+    background-color: #e0e0e0;
   }
   html body #contact .column2 .contactme #phone {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   html body #contact .column2 .contactme #phone a {
-    width: 14%;
+    width: 30%;
     -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
   }
@@ -513,16 +521,18 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    width: 40vw;
+    height: 300px;
   }
   html body #contact .column2 .socialmedia img {
-    width: 30%;
+    width: 20%;
     -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
   }

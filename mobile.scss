@@ -280,29 +280,35 @@
             #paperAirplane {
                 z-index:-100;
                 position:absolute;
-                top:73vh;
-                width:15%;
+                top:40vh;
+                left:65vw;
+                width:25%;
             }
             #contact {
                 display:flex;
-                flex-direction:row;
+                flex-direction:column;
                 justify-content: center;
+                align-items:center;
                 width:100vw;
 
                 .column1 {
-                    width:60vw;
+                    width:100vw;
                     display:flex;
                     flex-direction:column;
                     justify-content: center;
+                    align-items:center;
                     margin-top:5%;
 
                     .text-box1 {
                         display:flex;
                         flex-direction:column;
                         justify-content: center;
-                        margin-left:13%;
+                        align-items: center;
+                        width:100vw;
 
                         h1 {
+                            width:80vw;
+                            text-align:center;
                             font-family:roboto, sans-serif;
                             font-weight: 200;
                             letter-spacing: 0.03em;
@@ -311,6 +317,7 @@
                             color: #FF7BBA;
                         }
                         h2 {
+                            text-align:center;
                             font-family: roboto, sans-serif;
                             font-weight:lighter;
                             font-size:1.5em;
@@ -324,31 +331,31 @@
                     }
                 }
                 .column2 {
-                    width:30vw;
-                    height:70vh;
+                    width:100vw;
                     display:flex;
-                    flex-direction: column;
+                    flex-wrap:wrap-reverse;
                     align-items: center;
-                    justify-content: space-around;
+                    justify-content: center;
 
                     #wa {
-                        width:70%;
+                        width:80%;
                     }
                     .contactme {
                         display:flex;
                         flex-direction:column;
-                        width:23vw;
-                        height:15vh;
+                        width:45vw;
+                        height:30vh;
                         justify-content: space-evenly;
+                        background-color:rgb(224, 224, 224);
+                        border-radius:5%;
 
                         #email {
                             display:flex;
-                            flex-direction:row;
+                            flex-direction:column;
                             justify-content: flex-start;
-                            align-items: center;
 
                             button {
-                                width:14%;
+                                width:30%;
                                 transition: 0.3s linear;
 
                                 img {
@@ -361,18 +368,18 @@
                             #myInput {
                                 margin-left:3vw;
                                 font-size:0.9em;
-                                width:65%;
+                                width:90%;
                                 color:rgb(107, 107, 107);
+                                background-color:rgb(224, 224, 224);
                             }
                         }
                         #phone {
                             display:flex;
-                            flex-direction:row;
+                            flex-direction:column;
                             justify-content: flex-start;
-                            align-items: center;
 
                             a {
-                                width:14%;
+                                width:30%;
                                 transition: 0.3s linear;
 
                                 img {
@@ -389,11 +396,13 @@
                     }
                     .socialmedia {
                         display:flex;
-                        flex-direction:row;
+                        flex-direction:column;
                         justify-content: space-evenly;
+                        width:40vw;
+                        height:300px;
 
                         img {
-                            width:30%;
+                            width:20%;
                             transition: 0.3s linear;
                         }
                         img:hover {
