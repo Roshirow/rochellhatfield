@@ -62,6 +62,29 @@
                             transform-origin: scale(5);
                         }
                     }
+
+                    li:hover ul {
+                        display:block;
+                    }
+                    
+                    ul {
+                        display:none;
+                        position:absolute;
+                        background-color:rgba(255, 255, 255, 0.884);
+                        list-style-position:inside;
+                        width:200px;
+                        
+                        li {
+                            padding: 15px 10px;
+                            
+                            a {
+                                padding: 5px 15px 5px 5px;
+                            }
+                        }
+                        li a:hover {
+                            border-bottom:2px solid rgb(22, 212, 18);
+                        }
+                    }
                 }
             }
             #home {
