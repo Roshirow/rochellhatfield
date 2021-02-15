@@ -88,12 +88,15 @@
 
 <main id="digitalart">
 
-<img src="/img/warefare.jpg" alt="Hong Kong Riot">
-<img src="/img/spokane blue bridge_smaller.jpg" alt="Spokane Blue Bridge">
-<img src="/img/Reimagined Japanese City.png" alt="Japanese City Re-Imagined">
-<img src="/img/Blue Lions-remix.jpg" alt="Blue Lion">
-<img src="/img/Blue Lions-remix-white.jpg" alt="Blue Lions in White">
-<img src="/img/culture.jpg" alt="Japanese Culture">
+<div class="imgBox"><img src="/img/warefare.jpg" alt=""></div>
+<ul class="thumb">
+    <li><a href="/img/warefare.jpg" target="imgBox"><img src="/img/warefare.jpg" alt="" width="120px"></a></li>
+    <li><a href="/img/spokane blue bridge_smaller.jpg" target="imgBox"><img src="/img/spokane blue bridge_smaller.jpg" alt="" width="120px"></a></li>
+    <li><a href="/img/Reimagined Japanese City.png" target="imgBox"><img src="/img/Reimagined Japanese City.png" alt="" width="120px"></a></li>
+    <li><a href="/img/Blue Lions-remix.jpg" target="imgBox"><img src="/img/Blue Lions-remix.jpg" alt="" width="120px"></a></li>
+    <li><a href="/img/Blue Lions-remix-white.jpg" target="imgBox"><img src="/img/Blue Lions-remix-white.jpg" alt="" width="120px"></a></li>
+    <li><a href="/img/culture.jpg" target="imgBox"><img src="/img/culture.jpg" alt="" width="120px"></a></li>
+</ul>
 
 </main>
 </body>
@@ -102,4 +105,13 @@
         wireframing, wireframes, user experience, user interface, web design, product design, research, prototyping, data analysist, data Analytics, professional, experienced, highly committed, sales, business, marketing, brand strategy, brand strategist, senior level, work experience.
     </h2>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+	$('.thumb a').click(function(e){
+		e.preventDefault();
+		$('.imgBox img').attr("src",$(this).attr("href"));
+	})
+})
+</script>
 </html>

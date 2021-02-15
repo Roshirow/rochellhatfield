@@ -497,14 +497,39 @@
             }
             #digitalart {
                 width:100vw;
-                display:flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                margin-top:12%;
+                margin-top:1%;
 
-                img {
-                    width:15%;
-                    margin:3%;
+                .imgBox {
+                    width:400px;
+                    margin:50px auto 20px;
+
+                    img {
+                        width:100%;
+                        box-shadow:0 5px 25px rgba(255, 108, 243, 0.25);
+                    }
+                }
+
+                ul.thumb {
+                    margin:0 auto;
+                    padding:0;
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-evenly;
+
+                    li {
+                        list-style: none;
+                        margin:0 10px;
+
+                        img {
+                            border:4px solid white;
+                            box-shadow:0 5px 25px rgba(255, 108, 243, 0.5);
+                            transition: 0.3s linear;
+                        }
+
+                        img:hover {
+                            transform:scale(0.95);
+                        }
+                    }
                 }
                 
             }
@@ -521,9 +546,19 @@
             }
             #productdesign {
                 display:flex;
+                flex-direction:column;
+                width:100vw;
+                align-items:center;
+                justify-content: center;
                 
-                img {
-                    width:20%;
+                a {
+                    width:30%;
+                    margin-top:5%;
+                    margin-bottom:5%;
+
+                    img {
+                        width:100%;
+                    }
                 }
                 
             }
