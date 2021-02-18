@@ -65,7 +65,7 @@
                 }
             }
             #home {
-                width:95vw;
+                width:100vw;
                 display:flex;
                 flex-direction:column-reverse;
                 align-items: center;
@@ -74,21 +74,23 @@
                 .textmobile {
                     display:flex;
                     align-items: center;
+                    justify-content: center;
                     flex-direction: column;
-                    width:50vw;
+                    width:100vw;
 
                     h1 {
-                        width:75vw;
+                        width:100%;
+                        text-align: center;
                         font-family:roboto, sans-serif;
                         font-weight: 600;
-                        letter-spacing: 0.05em;
+                        letter-spacing: 0.03em;
                         font-size:2.5em;
                         line-height:0.8em;
                         color: #FF7BBA;
                     }
 
                     h2 {
-                        width:75vw;
+                        width:100%;
                         font-family:roboto, sans-serif;
                         font-weight: lighter;
                         letter-spacing: 0.05em;
@@ -133,12 +135,12 @@
                     }
 
                     button {
-                        width:30vw;
+                        width:50vw;
                         padding:3%;
                         background-color:white;
                         border: 1px solid lightblue;
                         border-radius:20px;
-                        margin-left:25vw;
+                        margin:0 10%;
                         transition: 0.3s linear;
 
                         a {
@@ -184,7 +186,29 @@
                         }
                     }
                 }
+                .button {
+                    position:absolute;
+                    z-index:100;
+                    top:85vh;
+                    left:35vw;
 
+                    button {
+                        width:30vw;
+                        padding:5%;
+                        background-color:lightblue;
+                        border: 1px solid lightblue;
+                        border-radius:20px;
+                        color:white;
+                        font-family:roboto, sans-serif;
+                        font-weight: lighter;
+                        font-size:0.8em;
+                        letter-spacing: 0.08em;
+                        transition: 0.3s linear;
+                    }
+                    button:hover {
+                        transform: scale(0.95);
+                    }
+                }
                 .flower {
                     display:none;
                     position:absolute;
