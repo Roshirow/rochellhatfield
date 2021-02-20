@@ -20,7 +20,7 @@
             width:100vw;
             overflow-x:hidden;
 
-            nav {
+            .nav_desktop {
                 width:100vw;
                 height:10vh;
                 margin-top:20px;
@@ -86,6 +86,9 @@
                         }
                     }
                 }
+            }
+            .nav_mobile {
+                display:none;
             }
             #home {
                 width:95vw;

@@ -20,7 +20,7 @@
     width: 100vw;
     overflow-x: hidden;
   }
-  html body nav {
+  html body .nav_desktop {
     width: 100vw;
     height: 10vh;
     margin-top: 20px;
@@ -38,19 +38,19 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  html body nav a {
+  html body .nav_desktop a {
     width: 15vw;
     -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
   }
-  html body nav a img {
+  html body .nav_desktop a img {
     width: 50%;
   }
-  html body nav a:hover {
+  html body .nav_desktop a:hover {
     -webkit-transform: scale(0.98);
             transform: scale(0.98);
   }
-  html body nav ul {
+  html body .nav_desktop ul {
     width: 75vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -67,37 +67,40 @@
             justify-content: space-evenly;
     list-style: none;
   }
-  html body nav ul li a {
+  html body .nav_desktop ul li a {
     text-decoration: none;
     color: black;
     font-family: roboto, sans-serif;
     -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
   }
-  html body nav ul li a:hover {
+  html body .nav_desktop ul li a:hover {
     color: #15d412;
     border-bottom: 2px solid #16d412;
     -webkit-transform-origin: scale(5);
             transform-origin: scale(5);
   }
-  html body nav ul li:hover ul {
+  html body .nav_desktop ul li:hover ul {
     display: block;
   }
-  html body nav ul ul {
+  html body .nav_desktop ul ul {
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.884);
     list-style-position: inside;
     width: 200px;
   }
-  html body nav ul ul li {
+  html body .nav_desktop ul ul li {
     padding: 15px 10px;
   }
-  html body nav ul ul li a {
+  html body .nav_desktop ul ul li a {
     padding: 5px 15px 5px 5px;
   }
-  html body nav ul ul li a:hover {
+  html body .nav_desktop ul ul li a:hover {
     border-bottom: 2px solid #16d412;
+  }
+  html body .nav_mobile {
+    display: none;
   }
   html body #home {
     width: 95vw;
