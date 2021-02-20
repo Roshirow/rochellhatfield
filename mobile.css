@@ -98,6 +98,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 70px;
   }
   html body #home .textmobile {
     display: -webkit-box;
@@ -240,7 +241,7 @@
   html body #home .button {
     position: absolute;
     z-index: 100;
-    top: 30vh;
+    top: 35vh;
     left: 70vw;
   }
   html body #home .button button {
