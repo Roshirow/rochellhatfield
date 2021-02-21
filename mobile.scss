@@ -275,7 +275,7 @@
                         width:15%;
                         z-index:100;
                         position: absolute;
-                        top:22%;
+                        top:25%;
                         left:9%;
                     }
                 }
@@ -304,7 +304,7 @@
                 position:absolute;
                 z-index:-100;
                 left:-3vw;
-                top:123vh;
+                top:125vh;
                 width:20vw;
             }
             #paperAirplane {
@@ -743,9 +743,11 @@
                 display:flex;
                 flex-direction:row;
                 justify-content: space-evenly;
+                align-items: center;
 
                 img {
                     width:40%;
+                    height:fit-content;
                 }
                 .text {
 
@@ -799,8 +801,9 @@
             .insights {
                 width:100vw;
                 display:flex;
-                flex-direction:row;
+                flex-direction:column;
                 justify-content: space-evenly;
+                align-items: center;
 
                 .text {
                     width:45vw;
@@ -824,6 +827,8 @@
                 }
                 .download-QA {
                     width:15vw;
+                    margin-top:20px;
+                    margin-bottom:30px;
 
                     a {
                         text-decoration: none;
@@ -846,6 +851,45 @@
                     a:hover {
                         transform: scale(0.95);
                     }
+                }
+            }
+            #beerbox {
+                width:100vw;
+                display:flex;
+                flex-direction:row;
+                justify-content: space-evenly;
+
+                h2 {
+                    font-family:roboto, sans-serif;
+                    font-size:1.2em;
+                    font-weight: lighter;
+                    text-transform: uppercase;
+                    letter-spacing: 0.03em;
+                    line-height:0.9em;
+                }
+                p {
+                    font-family:roboto, sans-serif;
+                    font-weight: lighter;
+                    letter-spacing: 0.05em;
+                    font-size:0.9em;
+                    line-height: 1.4em;
+                    color:rgb(53, 53, 53);
+                }
+
+                .row1 {
+                    display:flex;
+                    flex-direction:column;
+                    width:45vw;
+
+                    img {
+                        width:85%;
+                    }
+
+                }
+                .text {
+                    display:flex;
+                    flex-direction:column;
+                    width:35vw;
                 }
             }
             #information {

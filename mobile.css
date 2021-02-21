@@ -343,7 +343,7 @@
     width: 15%;
     z-index: 100;
     position: absolute;
-    top: 22%;
+    top: 25%;
     left: 9%;
   }
   html body #about .row2 {
@@ -378,7 +378,7 @@
     position: absolute;
     z-index: -100;
     left: -3vw;
-    top: 123vh;
+    top: 125vh;
     width: 20vw;
   }
   html body #paperAirplane {
@@ -939,9 +939,15 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   html body .skills img {
     width: 40%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   html body .skills .text h2 {
     font-family: roboto, sans-serif;
@@ -996,13 +1002,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   html body .insights .text {
     width: 45vw;
@@ -1025,6 +1034,8 @@
   }
   html body .insights .download-QA {
     width: 15vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   html body .insights .download-QA a {
     text-decoration: none;
@@ -1048,6 +1059,58 @@
   html body .insights .download-QA a:hover {
     -webkit-transform: scale(0.95);
             transform: scale(0.95);
+  }
+  html body #beerbox {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  html body #beerbox h2 {
+    font-family: roboto, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 0.9em;
+  }
+  html body #beerbox p {
+    font-family: roboto, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    color: #353535;
+  }
+  html body #beerbox .row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 45vw;
+  }
+  html body #beerbox .row1 img {
+    width: 85%;
+  }
+  html body #beerbox .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 35vw;
   }
   html body #information {
     display: none;
