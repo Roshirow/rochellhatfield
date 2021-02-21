@@ -343,7 +343,7 @@
     width: 15%;
     z-index: 100;
     position: absolute;
-    top: 18%;
+    top: 22%;
     left: 9%;
   }
   html body #about .row2 {
@@ -378,7 +378,7 @@
     position: absolute;
     z-index: -100;
     left: -3vw;
-    top: 118vh;
+    top: 123vh;
     width: 20vw;
   }
   html body #paperAirplane {
@@ -597,6 +597,7 @@
         -ms-flex-align: center;
             align-items: center;
     margin-top: 35%;
+    margin-bottom: 50px;
   }
   html body #design .carousel-container {
     width: 200px;
