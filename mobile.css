@@ -788,8 +788,12 @@
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   html body #ux .row1 .text h1 {
+    text-align: left;
     font-family: roboto, sans-serif;
     font-weight: 200;
     letter-spacing: 0.03em;
@@ -872,8 +876,8 @@
     font-size: 2.5em;
     font-weight: 600;
     letter-spacing: 0.02em;
-    float: right;
-    margin-right: 15%;
+    text-align: center;
+    width: 100vw;
   }
   html body #hatfieldrm {
     width: 100vw;
@@ -932,10 +936,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -948,6 +952,9 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  html body .skills .text {
+    width: 80vw;
   }
   html body .skills .text h2 {
     font-family: roboto, sans-serif;
@@ -965,23 +972,76 @@
     line-height: 1.4em;
     color: #353535;
   }
+  html body .skills .text ul li {
+    list-style: upper-roman;
+    font-family: roboto, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    color: #353535;
+  }
+  html body .video {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 50px 0 50px 0;
+  }
+  html body .video h2 {
+    font-family: roboto, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 1.2em;
+    text-align: center;
+  }
+  html body .video p {
+    font-family: roboto, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    color: #353535;
+  }
   html body .recruiter {
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   html body .recruiter img {
     width: 50%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  html body .recruiter .text {
+    width: 80vw;
   }
   html body .recruiter .text h2 {
+    text-align: center;
     font-family: roboto, sans-serif;
     font-size: 1.2em;
     font-weight: lighter;
@@ -1014,9 +1074,10 @@
             align-items: center;
   }
   html body .insights .text {
-    width: 45vw;
+    width: 80vw;
   }
   html body .insights .text h2 {
+    text-align: center;
     font-family: roboto, sans-serif;
     font-size: 1.2em;
     font-weight: lighter;
@@ -1033,32 +1094,24 @@
     color: #353535;
   }
   html body .insights .download-QA {
-    width: 15vw;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    width: 50vw;
   }
-  html body .insights .download-QA a {
-    text-decoration: none;
-    color: lightblue;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: roboto, sans-serif;
-    font-weight: lighter;
-    font-size: 0.8em;
-    letter-spacing: 0.08em;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 30px;
-    padding-left: 30px;
-    background-color: white;
-    border: 1px solid lightblue;
-    border-radius: 20px;
+  html body .insights .download-QA button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+  }
+  html body .insights .download-QA button img {
+    width: 100px;
+    height: 100px;
     -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
   }
-  html body .insights .download-QA a:hover {
+  html body .insights .download-QA button img:hover {
     -webkit-transform: scale(0.95);
             transform: scale(0.95);
+    cursor: pointer;
   }
   html body #beerbox {
     width: 100vw;

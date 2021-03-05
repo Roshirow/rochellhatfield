@@ -1132,6 +1132,9 @@
     line-height: 1.4em;
     color: #353535;
   }
+  html body .recruiter .text img {
+    width: 80%;
+  }
   html body .insights {
     width: 100vw;
     display: -webkit-box;
