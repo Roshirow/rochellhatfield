@@ -841,6 +841,42 @@
                             color:#FF7BBA;
                         }
                     }
+                    ul {
+
+                        li {
+                            list-style: upper-roman;
+                            font-family:roboto, sans-serif;
+                            font-weight: lighter;
+                            letter-spacing: 0.05em;
+                            font-size:0.9em;
+                            line-height: 1.6em;
+                            color:rgb(53, 53, 53);
+                        }
+                    }
+                }
+            }
+            .video {
+                width:100vw;
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+                margin:50px 0 50px 0;
+
+                h2 {
+                    font-family:roboto, sans-serif;
+                    font-size:1.2em;
+                    font-weight: lighter;
+                    text-transform: uppercase;
+                    letter-spacing: 0.03em;
+                    line-height:0.9em;
+                }
+                p {
+                    font-family:roboto, sans-serif;
+                    font-weight: lighter;
+                    letter-spacing: 0.05em;
+                    font-size:0.9em;
+                    line-height: 1.4em;
+                    color:rgb(53, 53, 53);
                 }
             }
             .recruiter {
@@ -853,6 +889,7 @@
                     width:50%;
                 }
                 .text {
+                    width:35vw;
 
                     h2 {
                         font-family:roboto, sans-serif;
@@ -901,26 +938,22 @@
                 .download-QA {
                     width:15vw;
 
-                    a {
-                        text-decoration: none;
-                        color:lightblue;
-                        text-transform: uppercase;
-                        text-align:center;
-                        font-family:roboto, sans-serif;
-                        font-weight: lighter;
-                        font-size:0.8em;
-                        letter-spacing: 0.08em;
-                        padding-top:25px;
-                        padding-bottom:25px;
-                        padding-right:30px;
-                        padding-left:30px;
-                        background-color:white;
-                        border: 1px solid lightblue;
-                        border-radius:20px;
-                        transition: 0.3s linear;
-                    }
-                    a:hover {
-                        transform: scale(0.95);
+                    button {
+                        width:100px;
+                        height:100px;
+                        border:none;
+                        background-color: transparent;
+
+                        img {
+                            width:100px;
+                            height:100px;
+                            transition: 0.3s linear;
+                        }
+
+                        img:hover {
+                            transform:scale(0.95);
+                            cursor: pointer;
+                        }
                     }
                 }
             }
