@@ -374,6 +374,39 @@
   html body #about .row2 img {
     width: 40%;
   }
+  html body #about .row3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    margin-top: 7%;
+  }
+  html body #about .row3 .text-box3 {
+    width: 85vw;
+    font-family: roboto, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.03em;
+    font-size: 1em;
+    line-height: 1.3em;
+  }
+  html body #about .row3 .text-box3 h2 {
+    font-family: roboto, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 0.9em;
+  }
   html body #fleur {
     position: absolute;
     z-index: -100;
