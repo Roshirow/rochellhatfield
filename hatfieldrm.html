@@ -112,15 +112,21 @@
     </div>
 </main>
 
-<!--
-<div class="skills">
-    <img src="/img/competitors.jpg" alt="">
+<div class="architecture">
+    <h2>Architecture</h2>
+    <div class="imgBox"><img src="/img/sketches.jpg" alt=""></div>
+    <ul class="thumb">
+        <li><a href="/img/sketches.jpg" target="imgBox"><img src="/img/sketches.jpg" alt="" width="120px"></a></li>
+        <li><a href="/img/wireframe 2.0.jpg" target="imgBox"><img src="/img/wireframe 2.0.jpg" alt="" width="120px"></a></li>
+        <li><a href="/img/wireframe.jpg" target="imgBox"><img src="/img/wireframe.jpg" alt="" width="120px"></a></li>
+        <li><a href="/img/wireframe2.jpg" target="imgBox"><img src="/img/wireframe2.jpg" alt="" width="120px"></a></li>
+    </ul>
     <div class="text">
-        <h2>I've got intelligence on my side</h2>
-        <p>I may be on the 10%, but I make up for with my skill set.</p>
+        <p>I started with the basic layout using grid paper. I am using the Atomic Design Principles to structure my website. </p>
     </div>
 </div>
 
+<!--
 <div class="recruiter">
     <div class="text">
         <h2>In the mind of a Recruiter</h2>
@@ -148,4 +154,14 @@
         wireframing, wireframes, user experience, user interface, web design, product design, research, prototyping, data analysist, data Analytics, professional, experienced, highly committed, sales, business, marketing, brand strategy, brand strategist, senior level, work experience.
     </h2>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+	$('.thumb a').click(function(e){
+		e.preventDefault();
+		$('.imgBox img').attr("src",$(this).attr("href"));
+	})
+})
+</script>
 </html>

@@ -833,6 +833,48 @@
                     width:35vw;
                 }
             }
+            .architecture {
+
+                h2 {
+                    text-align: center;
+                    font-family:roboto, sans-serif;
+                    font-size:1.2em;
+                    font-weight: lighter;
+                    text-transform: uppercase;
+                    letter-spacing: 0.03em;
+                    line-height:0.9em;
+                }
+
+                .imgBox {
+                    width:400px;
+                    margin:50px auto 20px;
+
+                    img {
+                        width:100%;
+                    }
+                }
+
+                ul.thumb {
+                    margin:0 auto;
+                    padding:0;
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-evenly;
+
+                    li {
+                        list-style: none;
+                        margin:0 10px;
+
+                        img {
+                            transition: 0.3s linear;
+                        }
+
+                        img:hover {
+                            transform:scale(0.95);
+                        }
+                    }
+                }
+            }
             .skills {
                 width:100vw;
                 display:flex;
