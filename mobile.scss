@@ -683,6 +683,20 @@
                 position: absolute;
                 z-index: -100;
             }
+            #motiondesign {
+                display:flex;
+                flex-direction: column;
+                width:100vw;
+                height:auto;
+                align-items: center;
+                justify-content: center;
+                margin: 100px auto 20px;
+
+                .vid1, .vid2, .vid3, .vid4, .vid5 {
+                    width: 80vw;
+                    margin: 10px auto 50px;
+                }
+            }
             #productdesign {
                 display:flex;
                 flex-direction: column;

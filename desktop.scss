@@ -559,7 +559,6 @@
 
                     img {
                         width:100%;
-                        box-shadow:0 5px 25px rgba(255, 108, 243, 0.25);
                     }
                 }
 
@@ -576,7 +575,7 @@
 
                         img {
                             border:4px solid white;
-                            box-shadow:0 5px 25px rgba(255, 108, 243, 0.5);
+                            box-shadow:0 5px 25px rgba(255, 108, 243, 0.178);
                             transition: 0.3s linear;
                         }
 
@@ -597,7 +596,6 @@
 
                     img {
                         width:100%;
-                        box-shadow:0 5px 25px rgba(255, 108, 243, 0.25);
                     }
                 }
 
@@ -614,7 +612,7 @@
 
                         img {
                             border:4px solid white;
-                            box-shadow:0 5px 25px rgba(255, 108, 243, 0.5);
+                            box-shadow:0 5px 25px rgba(255, 108, 243, 0.185);
                             transition: 0.3s linear;
                         }
 
@@ -674,6 +672,20 @@
                 width: 20vw;
                 position: absolute;
                 z-index: -100;
+            }
+            #motiondesign {
+                display:flex;
+                flex-direction: column;
+                width:100vw;
+                height:auto;
+                align-items: center;
+                justify-content: center;
+                margin: 90px auto 20px;
+
+                .vid1, .vid2, .vid3, .vid4, .vid5 {
+                    width: 40vw;
+                    margin: 10px auto 50px;
+                }
             }
             #productdesign {
                 display:flex;
